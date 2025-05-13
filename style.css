@@ -10,7 +10,7 @@ body, html {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   color: #fbfbfb;
-  background: url('https://images.pexels.com/photos/45971/honey-bee-nature-45971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920') no-repeat center center fixed;
+  background: url('img/crumpled-paper.jpg') no-repeat center center fixed; /* Updated background */
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(123, 115, 3, 0.5);
+  background-color: rgba(46, 35, 35, 0.787);
   z-index: -1;
 }
 
@@ -44,14 +44,15 @@ p.description {
   line-height: 1.6;
   margin-bottom: 2.5rem;
   text-shadow: 0 1px 4px rgba(0,0,0,0.7);
-}.insemination-info {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 2rem;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.7);
-  }
-  
+}
+
+.insemination-info {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
+}
 
 .bee-gallery {
   display: flex;
@@ -85,13 +86,4 @@ p.description {
     height: auto;
     border-radius: 8px;
   }
-
 }
-.insemination-info {
-    font-weight: 100;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 2rem;
-    text-shadow: 0 1px 4px #0d0d0d;
-  }
-  
