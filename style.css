@@ -75,6 +75,45 @@ p.description {
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
+/* Artificial Insemination Section */
+.artificial-insemination {
+  background: rgba(173, 173, 173, 0.9); /* Light background for contrast */
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(150, 109, 109, 0.3);
+  margin: 2rem auto;
+}
+
+.artificial-insemination img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 25px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.artificial-insemination img:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Step-by-step list */
+.artificial-insemination ol {
+  padding-left: 20px;
+  color: #5a3e1b;
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: decimal inside;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.artificial-insemination ol li {
+  margin-bottom: 12px;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   h1 {
