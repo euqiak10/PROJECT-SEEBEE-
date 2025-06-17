@@ -126,3 +126,21 @@ p.description {
     border-radius: 8px;
   }
 }
+   
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .gallery img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Para bordas arredondadas */
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
