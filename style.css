@@ -1,9 +1,18 @@
+/* Variáveis de cor */
+:root {
+    --background-color: #4e4d4d;
+    --content-background: #494949;
+    --title-color: #fffb00;
+    --subtitle-color: #ffcc00;
+    --text-color: #ffffff;
+}
+
 /* Minimalist typography and layout */
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #4e4d4d; /* Fundo cinza */
-    color: #ffffff; /* Texto claro para melhor legibilidade */
+    background: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 32px;
     line-height: 1.6;
@@ -14,90 +23,93 @@ body {
 }
 
 .container {
-    max-width: 800px; /* Limita a largura do conteúdo */
-    text-align: center; /* Centraliza o texto */
+    max-width: 800px;
+    text-align: center;
 }
 
 main {
-    background: #494949; /* Fundo para o conteúdo */
-    border-radius: 8px; /* Bordas mais suaves */
+    background: var(--content-background);
+    border-radius: 8px;
     max-width: 720px;
-    padding: 32px 20px; /* Menos padding para um visual mais limpo */
-    box-shadow: none; /* Remove a sombra para um visual mais plano */
+    padding: 32px 20px;
+    box-shadow: none;
 }
 
 h1 {
-    font-size: 3rem; /* Aumenta o tamanho da fonte do título principal */
+    font-size: 3rem;
     margin-bottom: 16px;
-    font-weight: 700; /* Peso de fonte mais leve */
-    color: #fffb00; /* Cor amarela para o título */
+    font-weight: 700;
+    color: var(--title-color);
 }
 
 h2 {
-    font-size: 1.75rem; /* Aumenta o tamanho da fonte dos subtítulos */
-    margin-top: 32px; /* Menos espaço acima */
-    margin-bottom: 12px; /* Menos espaço abaixo */
-    font-weight: 600; /* Peso de fonte mais leve */
-    color: #ffcc00; /* Cor amarela para os subtítulos */
+    font-size: 1.75rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--subtitle-color);
 }
 
 h3 {
-    font-size: 1.5rem; /* Tamanho de fonte reduzido */
+    font-size: 1.5rem;
     margin-top: 24px;
-    margin-bottom: 8px; /* Menos espaço abaixo */
-    font-weight: 500; /* Peso de fonte mais leve */
-    color: #ffcc00; /* Cor amarela para os subtítulos */
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--subtitle-color);
 }
 
 p {
-    font-size: 1rem; /* Tamanho de fonte reduzido */
-    margin-bottom: 16px; /* Menos espaço abaixo */
-    color: #ffffff; /* Texto claro */
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: var(--text-color);
 }
 
 ul {
     list-style-type: disc;
-    padding-left: 20px; /* Menos padding */
-    margin-bottom: 16px; /* Menos espaço abaixo */
-    color: #ffffff; /* Itens da lista em cor clara */
+    padding-left: 20px;
+    margin-bottom: 16px;
+    color: var(--text-color);
 }
 
 ul li {
-    margin-bottom: 4px; /* Menos espaço entre itens */
-    font-size: 1rem; /* Tamanho de fonte reduzido */
+    margin-bottom: 4px;
+    font-size: 1rem;
 }
 
+/* Galeria de imagens */
 .bee-gallery, .additional-bee-gallery {
-    margin: 20px 0; /* Espaçamento entre seções */
+    margin: 20px 0;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as imagens */
+    justify-content: center;
 }
 
 .gallery img {
-    max-width: 100%; /* Imagens responsivas */
-    height: auto; /* Mantém a proporção das imagens */
-    margin: 5px; /* Espaçamento entre as imagens */
-    transition: transform 0.3s ease; /* Transição suave para o efeito */
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
+    transform: scale(1.1);
 }
+
+/* Estilo para imagens da galeria */
 .bee-gallery img,
 .additional-bee-gallery img,
 .artificial-insemination img {
-    width: 200px; /* Defina a largura desejada */
-    height: 150px; /* Defina a altura desejada */
-    border-radius: 15px; /* Bordas arredondadas */
-    transition: transform 0.3s; /* Transição suave para o efeito de movimento */
+    width: 200px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s;
 }
 
 .bee-gallery img:hover,
 .additional-bee-gallery img:hover,
 .artificial-insemination img:hover {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    transform: scale(1.1);
 }
