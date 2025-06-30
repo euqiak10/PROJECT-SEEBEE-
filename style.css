@@ -5,6 +5,7 @@
     --title-color: #fffb00;
     --subtitle-color: #ffcc00;
     --text-color: #ffffff;
+    --neon-color: #00ffcc; /* Cor do efeito neon */
 }
 
 /* Minimalist typography and layout */
@@ -20,8 +21,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative; /* Para o efeito de neon */
+    overflow: hidden; /* Para evitar que o efeito de neon ultrapasse os limites */
 }
 
+/* Efeito de neon */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2), rgba(0, 255, 204, 0.1));
+    filter: blur(100px);
+    z-index: -1; /* Coloca o efeito atrás do conteúdo */
+}
+
+/* Restante do CSS permanece o mesmo */
 .container {
     max-width: 800px;
     text-align: center;
