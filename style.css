@@ -87,3 +87,17 @@ ul li {
 .gallery img:hover {
     transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
 }
+.bee-gallery img,
+.additional-bee-gallery img,
+.artificial-insemination img {
+    width: 200px; /* Defina a largura desejada */
+    height: 150px; /* Defina a altura desejada */
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: transform 0.3s; /* Transição suave para o efeito de movimento */
+}
+
+.bee-gallery img:hover,
+.additional-bee-gallery img:hover,
+.artificial-insemination img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
